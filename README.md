@@ -52,7 +52,7 @@ Planned use cases for future phases:
 ![Server](screenshots/screenshot_server_running.png)
 
 ### GitHub Repository Overview
-![Repo](screenshots/screenshot_github_repo.png)
+![GitHub Repo](screenshots/screenshot_github_repo.png)
 
 
 **🚀 Technologies Used**
