@@ -74,3 +74,4 @@ Planned use cases for future phases:
 Swamy Gorla
 Graduate Student – Master of Computer Science
 Lewis University
+© 2025 Swamy Gorla – Lewis University
