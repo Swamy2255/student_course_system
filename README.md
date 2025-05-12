@@ -70,8 +70,12 @@ Planned use cases for future phases:
 | Phase 3     | 40% of working implementation         | ✅ In Progress  |
 | Final Phase | Fully functional system with features | 🔜 Coming Soon |
 
-👩‍💻 Developer
+**👩‍💻 Developer**
+
 Swamy Gorla
+
 Graduate Student – Master of Computer Science
+
 Lewis University
+
 © 2025 Swamy Gorla – Lewis University
