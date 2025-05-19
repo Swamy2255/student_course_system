@@ -86,7 +86,7 @@ Django Admin Interface
 ![Enrolled Courses](screenshots/screenshot_enrolled_courses.png)
 
 #### Enrollment Confirmation
-![Enrollment Confirmation](screenshots/screenshot_ enrollment_confirmation.png)
+![Enrollment Confirmation](screenshots/screenshot_enrollment_confirmation.png)
 
 #### ❌ Drop Confirmation
 ![Drop Course](screenshots/screenshot_drop.png)
