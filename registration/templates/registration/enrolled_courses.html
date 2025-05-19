@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Enrolled Courses</title>
+</head>
+<body>
+    <h2>My Enrolled Courses</h2>
+
+    <!-- Success Message -->
+    {% if messages %}
+        <ul style="color: green; font-weight: bold;">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Enrolled Course List -->
+    {% if enrollments %}
+        <ul>
+            {% for enrollment in enrollments %}
+                <li>
+                    {{ enrollment.course.title }} - Enrolled on {{ enrollment.enrollment_date|date:"Y-m-d" }}
+
+                    <!-- Drop Button -->
+                    <form method="post" action="{% url 'drop_course' enrollment.course.id %}" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit">Drop</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You are not enrolled in any courses.</p>
+    {% endif %}
+
+    <br>
+    <a href="{% url 'course_list' %}">← Back to Course List</a>
+</body>
+</html>

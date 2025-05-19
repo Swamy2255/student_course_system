@@ -5,8 +5,20 @@
     <h1>Available Courses</h1>
     <ul>
         {% for course in courses %}
-            <li>{{ course.title }} - Seats: {{ course.seats_available }}</li>
+            <li>
+                {{ course.title }} - Seats: {{ course.seats_available }}
+                {% if user.is_authenticated %}
+                    <form method="post" action="{% url 'enroll_course' course.id %}">
+                        {% csrf_token %}
+                        <button type="submit">Enroll</button>
+                        <a href="{% url 'enrolled_courses' %}">View My Courses</a>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}">Login to enroll</a>
+                {% endif %}
+            </li>
         {% endfor %}
     </ul>
+
 </body>
 </html>

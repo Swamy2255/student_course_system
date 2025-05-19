@@ -51,11 +51,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'student_course_system.urls'
-
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'registration', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
