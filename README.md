@@ -1,4 +1,4 @@
-🎓 Student Course Registration System
+# 🎓 Student Course Registration System
 
 ## 📝 Project Overview
 
@@ -65,19 +65,17 @@ Django Admin Interface
    Main app: http://127.0.0.1:8000/
    Admin panel: http://127.0.0.1:8000/admin/
    
-**📚 Use Cases**
+## 📚 Use Cases
 | Use Case     | Description                                         |
 | ------------ | --------------------------------------------------- |
 | View Courses | A student can view a list of all available courses. |
 | Enroll Courses | A student can enroll the avilable courses.        |
 | Drop Courses | Student can drop from the enrolled courses.         |
 
+## 📸 Screenshots
 
-**📸 Screenshots**
-## Screenshots
-
-
-### 📸 Screenshots
+#### Login Page
+![Login Credentials](screenshots/screenshot_login.png)
 
 #### 📘 Course List Page
 ![Course List](screenshots/screenshot_available_courses.png)
@@ -94,9 +92,7 @@ Django Admin Interface
 #### 🛠️ Admin Panel (Courses)
 ![Admin Panel](screenshots/screenshot_admin_panel.png)
 
-
-
-**📅 Project Timeline**
+## 📅 Project Timeline
 | Phase       | Description                           | Status         |
 | ----------- | ------------------------------------- | -------------- |
 | Phase 1     | Project idea and overview             | ✅ Completed    |
@@ -104,7 +100,18 @@ Django Admin Interface
 | Phase 3     | 40% of working implementation         | ✅ Completed  |
 | Final Phase | Fully functional system with features | ✅ Completed |
 
-**👩‍💻 Developer**
+## ✅ Highlights of the Final System
+🔐 All course features require login
+
+🙋 Logged-in users see their name, logout link, and “My Courses”
+
+🧩 Clean layout using Django templates
+
+✅ Logout works properly via GET method override
+
+🔁 CSRF and session security are in place
+
+## 👩‍💻 Developer
 
 Swamy Gorla
 
