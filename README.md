@@ -76,13 +76,24 @@ Django Admin Interface
 **📸 Screenshots**
 ## Screenshots
 
-| Page                    | Screenshot                                       |
-| ----------------------- | ------------------------------------------------ |
-| Course List             | ![](screenshots/screenshot_available_courses)      |
-| Enrolled Courses        | ![](screenshots/screenshot_enrolled_courses) |
-| Enrollment Confirmation | ![](screenshots/screenshot_ enrollment_confirmation) | 
-| After Drop Confirmation | ![](screenshots/screenshot_drop)             |
-| Admin Panel (Courses)   | ![](screenshots/screenshot_admin_panel)    |
+
+### 📸 Screenshots
+
+#### 📘 Course List Page
+![Course List](screenshots/screenshot_available_courses.png)
+
+#### 🧾 Enrolled Courses Page
+![Enrolled Courses](screenshots/screenshot_enrolled_courses.png)
+
+#### Enrollment Confirmation
+![Enrollment Confirmation](screenshots/screenshot_ enrollment_confirmation.png)
+
+#### ❌ Drop Confirmation
+![Drop Course](screenshots/screenshot_drop.png)
+
+#### 🛠️ Admin Panel (Courses)
+![Admin Panel](screenshots/screenshot_admin_panel.png)
+
 
 
 **📅 Project Timeline**
