@@ -1,16 +1,40 @@
 🎓 Student Course Registration System
 
-This Django-based project simulates a simplified student course registration system. It allows students to view available courses and their seat availability. This is an ongoing academic project for the **Software Architecture and Design** course at Lewis University.
+## 📝 Project Overview
+
+This is a Django-based web application that allows students to browse available courses, enroll in them, view their registered courses, and drop courses as needed. The system uses Django’s built-in authentication and admin features, making it secure and easy to manage for both students and administrators.
 
 ---
 
-## ✅ Features Implemented (40%)
+## 🚀 Features
+✅ User registration and login/logout
 
-- Display available courses with seat counts.
-- Django framework setup and basic project structure.
-- Static course data rendered using Django templates.
+✅ View list of available courses with seat availability
+
+✅ Enroll in courses
+
+✅ View enrolled courses
+
+✅ Drop enrolled courses
+
+✅ Admin dashboard for managing courses and enrollments
+
+✅ Success messages for user actions
+
+✅ Secure form handling with CSRF protection
 
 ---
+
+## 🛠️ Technologies Used
+Python 3.13
+
+Django 5.2
+
+SQLite (Default DB)
+
+HTML/CSS (Django Templates)
+
+Django Admin Interface
 
 ## 🔧 Setup Instructions
 
@@ -25,50 +49,49 @@ This Django-based project simulates a simplified student course registration sys
 3. **Install dependencies:**
    ```bash
    pip install django
-4. **Run the server:**
+4. **Run migrations:**
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+5. **Create a superuser:**
+   ```bash
+   python manage.py createsuperuser
+6. **Start the development server:**
    ```bash
    python manage.py runserver
-5. **Access the app in your browser:**
+
+7. **Access the app in your browser:**
    ```cpp
-   http://127.0.0.1:8000/
+   Main app: http://127.0.0.1:8000/
+   Admin panel: http://127.0.0.1:8000/admin/
    
-**📚 Use Cases (Phase 3)**
+**📚 Use Cases**
 | Use Case     | Description                                         |
 | ------------ | --------------------------------------------------- |
 | View Courses | A student can view a list of all available courses. |
+| Enroll Courses | A student can enroll the avilable courses.        |
+| Drop Courses | Student can drop from the enrolled courses.         |
 
-Planned use cases for future phases:
-•	Student registration/login
-•	Course enrollment
-•	Admin adding/removing courses
 
 **📸 Screenshots**
 ## Screenshots
 
-### Available Courses Page
-![Course List](screenshots/screenshot_course_list.png)
+| Page                    | Screenshot                                       |
+| ----------------------- | ------------------------------------------------ |
+| Course List             | ![](screenshots/screenshot_available_courses)      |
+| Enrolled Courses        | ![](screenshots/screenshot_enrolled_courses) |
+| Enrollment Confirmation | ![](screenshots/screenshot_ enrollment_confirmation) | 
+| After Drop Confirmation | ![](screenshots/screenshot_drop)             |
+| Admin Panel (Courses)   | ![](screenshots/screenshot_admin_panel)    |
 
-### Django Server Running
-![Server](screenshots/screenshot_server_running.png)
-
-### GitHub Repository Overview
-![GitHub Repo](screenshots/screenshot_github_repo.png)
-
-
-**🚀 Technologies Used**
-•	Python 3.13
-•	Django Web Framework
-•	SQLite (Default DB)
-•	HTML (Django Templates)
-•	Git & GitHub
 
 **📅 Project Timeline**
 | Phase       | Description                           | Status         |
 | ----------- | ------------------------------------- | -------------- |
 | Phase 1     | Project idea and overview             | ✅ Completed    |
 | Phase 2     | System requirements and planning      | ✅ Completed    |
-| Phase 3     | 40% of working implementation         | ✅ In Progress  |
-| Final Phase | Fully functional system with features | 🔜 Coming Soon |
+| Phase 3     | 40% of working implementation         | ✅ Completed  |
+| Final Phase | Fully functional system with features | ✅ Completed |
 
 **👩‍💻 Developer**
 
