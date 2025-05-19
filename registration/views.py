@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Course, Enrollment
 
+@login_required
 def course_list(request):
     courses = Course.objects.all()
     return render(request, 'registration/course_list.html', {'courses': courses})

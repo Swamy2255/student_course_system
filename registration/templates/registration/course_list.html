@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head><title>Course List</title></head>
+<head>
+    <title>Course List</title>
+</head>
 <body>
+
+    <!-- Navigation Bar -->
+    <div style="margin-bottom: 20px;">
+        {% if user.is_authenticated %}
+            <p>
+                Welcome, {{ user.username }}! 
+                
+                <a href="{% url 'enrolled_courses' %}">My Courses</a>
+            </p>
+        {% else %}
+            <p>
+                <a href="{% url 'login' %}">Login</a> |
+                <a href="{% url 'register' %}">Register</a>
+            </p>
+        {% endif %}
+    </div>
+
     <h1>Available Courses</h1>
+
     <ul>
         {% for course in courses %}
             <li>
                 {{ course.title }} - Seats: {{ course.seats_available }}
                 {% if user.is_authenticated %}
-                    <form method="post" action="{% url 'enroll_course' course.id %}">
+                    <form method="post" action="{% url 'enroll_course' course.id %}" style="display: inline;">
                         {% csrf_token %}
                         <button type="submit">Enroll</button>
-                        <a href="{% url 'enrolled_courses' %}">View My Courses</a>
                     </form>
                 {% else %}
                     <a href="{% url 'login' %}">Login to enroll</a>
@@ -19,6 +38,10 @@
             </li>
         {% endfor %}
     </ul>
+    <form action="{% url 'logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+    </form> 
 
 </body>
 </html>
